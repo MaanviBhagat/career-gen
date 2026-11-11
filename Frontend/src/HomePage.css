@@ -1,0 +1,83 @@
+.home-container {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  background-image: url('../assets/Career Gen.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.content {
+  color: white;
+  text-align: left;
+  z-index: 2;
+  max-width: 600px;
+  padding: 0 40px;
+  margin-top: 200px;
+}
+
+.content h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 14px;
+  margin-top: 0;
+}
+
+.btn {
+  padding: 14px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: #3b4fd8;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  letter-spacing: 0.3px;
+}
+
+.btn:hover {
+  background-color: #2d3eb8;
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #3b4fd8;
+  color: #3b4fd8;
+}
+
+.btn-outline:hover {
+  background-color: rgba(59, 79, 216, 0.1);
+  transform: translateY(-1px);
+}
