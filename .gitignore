@@ -1,0 +1,8 @@
+# Node.js dependencies
+BackEnd/node_modules/
+Frontend/node_modules/
+
+# Environment variable files
+BackEnd/.env
+BackEnd/.env.local
+BackEnd/.env.*
